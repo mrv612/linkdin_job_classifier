@@ -16,3 +16,5 @@ The project was developed in three phases:
 1. LinkedIn Data Scraping to create the dataset; 
 2. Development of a Deep Learning model for multiclass classification;
 3. Development of a web app using Streamlit in order to facilitate the interaction with the model.
+
+# 1. Dataset
