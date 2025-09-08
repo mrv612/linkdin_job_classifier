@@ -86,3 +86,25 @@ O objetivo deste projeto é a criação de um modelo usando NLP capaz de receber
 
 # Overview
 
+A motivação deste projeto é como um possível auxílio para construção de equipes de dados por funcionários de RH. O usuário coloca como input do modelo a descrição do funcionário que ele está procurando e o modelo retorna qual título este funcionário mais se adequa em uma equipe de dados, classificando a vaga entre Data Scientist, Data Analyst ou Data Engineer.
+
+O projeto foi desenvolvido a partir de três etapas:
+
+1. Data Scraping do Linkedin para a criação do dataset;
+2. Criação de um modelo de Deep Learning para classificação multi-classes;
+3. Criação de um webapp para a interação mais fluida com o modelo usando Streamlit.
+
+   
+# 1. Dataset
+
+
+O Dataset foi criado utilizando Selenium a partir de um script de scraping disponível no arquivo scraper/scraper.py .
+
+O processo consistiu em pesquisar por vagas de Data Scientist, Data Analyst e Data Engineer (mil de cada título, um título por vez), e buscar a descrição de cada vaga conforme fornecido pela empresa contratante.
+
+O Dataset será disponibilizado somente para o avaliador do projeto, uma vez que não foram solicitadas as autorizações do Linkedin para a realização do scraping e tampouco das empresas envolvidas.
+
+# 2. Modelo
+   
+
+
