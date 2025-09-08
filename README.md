@@ -44,3 +44,39 @@ The best model architecture found was:
 
 
 Best model diagram, 86.85% accuracy in the test set.
+
+
+<img width="1807" height="434" alt="image" src="https://github.com/user-attachments/assets/8dd4b3b6-446f-47c0-b0ac-cd8a6c9ef5e2" />
+
+
+Tuning report of the best model
+
+<img width="538" height="890" alt="image" src="https://github.com/user-attachments/assets/fc1895c1-b3f4-4ff6-8c5d-15fb76081008" />
+
+
+#3. Webapp Streamlit
+
+ 
+To see the model in action with Streamlit, use
+
+$ git clone https://github.com/brunorosilva/nlp-classificacao-de-vagas.git
+$ cd nlp-classificacao-de-vagas
+~/nlp-classificacao-de-vagas $ pip install -r requirements.txt
+
+
+and then
+
+~/nlp-classificacao-de-vagas $ streamlit run dashboard.py
+
+
+In the dashboard you'll be able to choose among simple examples, examples taken from LinkedIn which were not in the traning nor in the test set or even trying a manual input.
+
+The webapp is extremely simple and it works as a POC, just choose among the options and the dashboard will create a bar plot showing the estimated probability among the three possible job titles.
+
+
+<img width="1883" height="975" alt="image" src="https://github.com/user-attachments/assets/3e2bbd00-5e73-451b-8635-f94bae419049" />
+
+# NLP - Classificação de Vagas
+
+
+
