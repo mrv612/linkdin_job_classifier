@@ -79,4 +79,10 @@ The webapp is extremely simple and it works as a POC, just choose among the opti
 # NLP - Classificação de Vagas
 
 
+Este projeto é uma atividade da Especialização em Inteligência Artificial da PECE-Poli, disciplina de Processamento de Linguagem Natural.
+
+O objetivo deste projeto é a criação de um modelo usando NLP capaz de receber uma descrição de vaga e retornar ao usuário qual é a visão do mercado sobre o título que este funcionário mais se adequa.
+
+
+# Overview
 
