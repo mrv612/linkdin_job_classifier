@@ -35,8 +35,11 @@ The best model architecture found was:
 
 
 . 8 hidden layers with 8 neurons each;
+
 . batch_size=64;
+
 . trained for 20 epochs;
+
 . SGD opt.
 
 
