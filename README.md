@@ -107,4 +107,56 @@ O Dataset será disponibilizado somente para o avaliador do projeto, uma vez que
 # 2. Modelo
    
 
+O modelo foi criado utilizando Tensorflow Keras e outros métodos abordados durante o curso.
+
+Para o tuning de hiperparâmetros foi desenvolvido um método personalizado de gridsearch com a criação de um relatório interativo para a obtenção de um modelo com a melhor arquitetura encontrada. O arquivo com todos os testes realizados (mais de 400MB) pode ser solicitado caso necessário, mas um exemplo pequeno deste relatório está disponível no arquivo tuning-process-report.html.
+
+A melhor arquitetura de modelo encontrada foi com os seguintes hiperparâmetros:
+
+. 8 camadas ocultas, com 8 neurônios cada;
+. função de ativação tanh;
+. batch_size=64;
+. 20 épocas de treinamento;
+. função de custo SGD.
+
+Diagrama do modelo escolhido, com exatidão de 86.85% na base de validação.
+
+
+<img width="1807" height="434" alt="image" src="https://github.com/user-attachments/assets/8e92cea8-71fd-4318-8453-0732e09a5843" />
+
+
+Recorte do relatório de tuning com o modelo vencedor.
+
+<img width="538" height="890" alt="image" src="https://github.com/user-attachments/assets/c55aac69-45aa-4cf6-840f-d951ffb34404" />
+
+
+# 3. Webapp Streamlit
+
+
+Para a interação mais fluida com o modelo foi criado um webapp usando Streamlit e para acessá-lo basta instalar as bibliotecas necessárias
+
+com Git 
+
+
+$ git clone https://github.com/brunorosilva/nlp-classificacao-de-vagas.git
+$ cd nlp-classificacao-de-vagas
+~/nlp-classificacao-de-vagas $ pip install -r requirements.txt
+
+
+e usar o comando
+
+
+~/nlp-classificacao-de-vagas $ streamlit run dashboard.py
+
+
+
+onde o usuário pode escolher entre exemplos simples, exemplos tirados do Linkedin que não estão na base de treino nem de teste ou um input manual.
+
+O webapp é extremamente simples e serve como prova de conceito, basta escolher entre as opções e o dashboard criará um gráfico de barras mostrando a probabilidade estimada pelo modelo entre os três títulos possíveis 
+
+
+<img width="1883" height="975" alt="image" src="https://github.com/user-attachments/assets/8c2d6d6f-b74f-4dec-9422-a8938fba94be" />
+
+
+
 
